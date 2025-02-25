@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>This is great</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        #myCanvas{
+            /* height: 0;
+            width: 0; */
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-black">
+    <input class="hidden" type="file" name="audio" id="audio" accept="audio/*">
+    <label for="audio" class="bg-blue-800 cursor-pointer block text-blue-200 p-4 rounded-xl border-2 hover:bg-blue-900"> + Add music now</label>
+    <canvas id="myCanvas"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>This is canvas</title>
+</head>
+<body>
+    <div>
+        <audio id="audio" src="./assets/black-box-freestyle-rap-beat-13822.mp3" loop></audio>
+    <button id="btnPlay">play</button>
+    <button id="btnPause"> pause</button>
+    <input type="file" name="Audio" id="Audio" accept="audio/*">
+    </div>
+    <canvas id="myCanvas"></canvas>
+    <script src="script.js"></script>
+    <script>
+        const btnPlay = document.getElementById("btnPlay");
+        const btnPause = document.getElementById("btnPause");
+        const audio = document.getElementById("audio");
+        // console.log(audio.currentTime,audio.duration,audio.volume)
+        btnPlay.addEventListener("click",(e)=>{
+            audio.play();
+        })
+        btnPause.addEventListener("click",(e)=>{
+            audio.pause();
+        })
+    </script>
+    
+</body>
+</html>
